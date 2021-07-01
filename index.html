@@ -2,144 +2,321 @@
 <html>
 <head>
 <title>Presentación</title>
-<style>
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
-</style>
 </head>
+/* Base Formatting --------------------------------- */
 <body>
+body {font-family: Arial, Verdana, Sans-serif;} 
+img {border: 0px;}
 
-<h1>Quien soy</h1>
-<p>     Soy  Larry De la Cruz Silva, estudiante de la poderosísima carrera de ingeniería de sistemas en la Universidad Nacional del Callao.
-	Me gusta los deportes en equipo, escuchar música 
-	y jugar dota2. Estoy llevando el curso de Programación web, y esto es un inicio de lo que se puede hacer con las herramientas 
-	como son las etiquetas.</p>
-<h2>Datos personales</h2>
-<img src="Foto.jpg" alt="I'm this">
-<h3>Ciclo: IV </h3>
-<h4>Número: 992347598</h4>
-<h5>Dirección: Lima</h5>
-<h6>correo:lcrdelacruzs@unac.edu.pe</h6>
-<h7>Les presento la página en la universidad que estudio</h7>
-<a href="#">
-	<span></span>
-	<span></span>
-	<span></span>
-	<span></span>
-	ingresar
-</a>
-<a href="https://www.unac.edu.pe">Visit UNAC</a>
-	<br><br>
-	<form action=""method"">
-	<label for="Formulario">Formulario</label><br><br>
-	<label for="nombre">Ingresa tu nombre </label>
-	<input type="text" id="nombre">
-	<label for="contraseña">Contraseña:</label>
-	<input type="password" name="contraseña" id="contraseña">
-	<br><br>
-    <label for="Género">Género:</label><br>
-	<input type="radio" name="genero" id="hombre">
-	<label for="hombre">Masculino</label>
-	<input type="radio" name="genero" id="mujer">
-	<label for="mujer">Femenino</label>
-	<br></br>
-	<label for="universidad">Ingresa el nombre de tu universidad:</label><br>
-	<input type="text" id="Universidad"><br><br>
-	<label for="Dirección"> Ingrese su domicilio</label><br>
-	<input type="text" id="domicilio"><br><br>
-	<label for="">"Conocimientos:" </label><br>
+pre {font-size: 1.2em; font-weight: bold;}
+code {font-size: 1.2em; font-weight: bold;}
+/* Hide from IE5-mac. Only IE-win sees this. \*/
+* html pre {font-size: 1em; font-weight: bold;}
+*:first-child+html pre {font-size: 1em; font-weight: bold;}
+* html code {font-size: 1em; font-weight: bold;}
+*:first-child+html code {font-size: 1em; font-weight: bold;}
+/* End hide from IE5-mac */
 
-	<input type="checkbox" name="Language" id="HTML5">
-	<label for="HTML5">HTML5 </label><br>
-	<input type="checkbox" name="Language" id="CSS">
-	<label for="CSS">CSS </label><br>
-	<input type="checkbox" name="Language" id="JavaScript">	
-	<label for="JavaScript">JS</label><br>
-	<input type="submit" value="Enviar datos">
-	<input type="reset" value="Borrar datos">
-	<h2>Información sobre la tarea</h2>
-        	<div id="name">
-        		<label for="task_name">Estado de la tarea</label>
-        		<input type="text" id="task_name" name="task_name">
-            	</div>
-            	<label>Estado</label>
-            	<div id="state">
-            		<input type="chekbox" id="task_todo" name="task_state" 		value="todo">
-                	<label for="task_todo">Pendiente</label>
+form {margin: 0px;}
+map {margin: 0px;}
 
-            		<input type="chekbox" id="task_prog" name="task_state" 		value="progress">
-                	<label for="task_prog">En progreso</label>
-           
-            		<input type="chekbox" id="task_done" name="task_state" 		value="done">
-                	<label for="task_done">Hecha</label>
-                
-             	</div>
-             	<div id ="state">
-             		<label for="task_detail">Detalle</label>
-                	<texttarea id="task_detail" name="task_detail"></texttarea>
-             	</div>
-             	<div class="button">
-             	<button type="submit"> Guardar cambios>></button>
-            
-	</form>
-	<h2>Cursos llevados</h2>
+.inline {display: inline;}
+.inline-end {margin-top: 15px;}
 
-	<table>
-  	<tr>
-    		<th>Primer Ciclo</th>
-    		<th>Segundo Ciclo</th>
-    		<th>Tercer Ciclo</th>
-    		<th>Cuarto Ciclo</th>
-    		<th>Cursos Extracurriculares</th>
- 	 </tr>
-  	<tr>
-    		<td>Cálculo I</td>
-    		<td>Física I</td>
-    		<td>Física II</td>
-    		<td>Matemática discreta</td>
-    		<td>Microsoft Excel básico</td>
-  	</tr>
-  	<tr>
-    		<td>Matemática básica</td>
-    		<td>Programación estructurada</td>
-    		<td>Programación orientada a objetos</td>
-    		<td>Teoría de Sistemas</td>
-    		<td>Microsoft Word básico</td>
-  	</tr>
-  	<tr>
-    		<td>Teoría de la información y codificación</td>
-    		<td>Cálculo II</td>
-    		<td>Programación orientada a objetos</td>
-		<td></td>
-    		<td>Microsoft Access básico</td>
-  	</tr>
-  	<tr>
-    		<td>Comunicación y redacción</td>
-    		<td>Metodología de la investigación científica</td>
-    		<td>Contabilidad</td>
-		<td></td>
-		<td></td>
-  	</tr>
-  	<tr>
-    		<td>Filosofía y lógica</td>
-    		<td>Dibujo y geometría descriptiva</td>
-		<td></td>
-		<td></td>
-		<td></td>
-  	</tr>
-	</table>
+/* Horizontal Rule For Internet Explorer */	
+hr {height: 1px; color: #bbb; border: none;} 
+/* Horizontal Rule For Gecko-based browsers */
+html>body hr {height: 1px; background: #bbb; border: none;}
+/* Horizontal Rule For Opera and Gecko-based browsers */
+html>body hr {height: 1px; background: #bbb; border: 0px solid #999;}
+
+/* Horizontal Rule For Internet Explorer */	
+hr.brown {height: 1px; color: #D0A760; border: none;} 
+/* Horizontal Rule For Gecko-based browsers */
+html>body hr.brown {height: 1px; background: #D0A760; border: none;}
+/* Horizontal Rule For Opera and Gecko-based browsers */
+html>body hr.brown {height: 1px; background: #D0A760; border: 0px solid #999;}
+
+/* Horizontal Rule For Internet Explorer */	
+hr.gold {height: 1px; color: #E7D19A; border: none;} 
+/* Horizontal Rule For Gecko-based browsers */
+html>body hr.gold {height: 1px; background: #E7D19A; border: none;}
+/* Horizontal Rule For Opera and Gecko-based browsers */
+html>body hr.gold {height: 1px; background: #E7D19A; border: 0px solid #999;}
+
+/* Horizontal Rule For Internet Explorer */	
+hr.red {height: 1px; color: #900; border: none;} 
+/* Horizontal Rule For Gecko-based browsers */
+html>body hr.red {height: 1px; background: #900; border: none;}
+/* Horizontal Rule For Opera and Gecko-based browsers */
+html>body hr.red {height: 1px; background: #900; border: 0px solid #999;} 
+
+/* Default Link --------------------------------- */
+a {color:#039; text-decoration: underline;}
+a:link {color: #039;}
+a:visited {color: #306;}
+a:hover, a:active {color:#900;}
+sup a {text-decoration: none;}
+sub a {text-decoration: none;}
+
+/* Unordered List --------------------------------- */
+ul {list-style: square; margin-top: 0px;}
+ul li {margin-bottom: 0px;}
+ul.linebreak {list-style: square;}
+ul.linebreak li {margin-bottom: 15px;}
+ul.linebreak ol li {margin-bottom: 0px;}
+
+ul.square {list-style: square;}
+ul.square li {margin-bottom: 0px;}
+ul.square-linebreak {list-style: square;}
+ul.square-linebreak li {margin-bottom: 15px;}
+ul.square-linebreak ol li {margin-bottom: 0px;}
+
+ul.disc {list-style: disc;}
+ul.disc li {margin-bottom: 0px;}
+ul.disc-linebreak {list-style: disc;}
+ul.disc-linebreak li {margin-bottom: 15px;}
+ul.disc-linebreak ol li {margin-bottom: 0px;}
+
+ul.circle {list-style: circle;}
+ul.circle li {margin-bottom: 0px;}
+ul.circle-linebreak {list-style: circle;}
+ul.circle-linebreak li {margin-bottom: 15px;}
+ul.circle-linebreak ol li {margin-bottom: 0px;}
+
+ul.uncheck, ul li.uncheck {list-style-image: url(../unchecked-box-bullet.gif);}
+ul.uncheck li {margin-bottom: 0px;}
+ul.uncheck-linebreak {list-style-image: url(../unchecked-box-bullet.gif);}
+ul.uncheck-linebreak li {margin-bottom: 15px;}
+ul.uncheck-linebreak ol li {margin-bottom: 0px;}
+
+ul.check, ul li.check {list-style-image: url(../checked-box-bullet.gif);}
+ul.check li {margin-bottom: 0px;}
+ul.check-linebreak {list-style-image: url(../checked-box-bullet.gif);}
+ul.check-linebreak li {margin-bottom: 15px;}
+ul.check-linebreak ol li {margin-bottom: 0px;}
+
+ul.pdf {list-style-image: url(../download-pdf.gif);}
+ul.pdf li {margin-bottom: 0px;}
+ul.pdf-linebreak {list-style-image: url(../download-pdf.gif);}
+ul.pdf-linebreak li {margin-bottom: 15px;}
+ul.pdf-linebreak ol li {margin-bottom: 0px;}
+
+ul.none {list-style: none;}
+ul.none li {margin-bottom: 0px;}
+ul.none-linebreak {list-style: none;}
+ul.none-linebreak li {margin-bottom: 15px;}
+ul.none-linebreak ol li {margin-bottom: 0px;}
+	
+/* Ordered List --------------------------------- */
+ol {list-style: decimal; margin-top: 0px;}
+ol li {margin-bottom: 0px;}
+ol.linebreak {list-style: decimal;}
+ol.linebreak li {margin-bottom: 15px;}
+ol.linebreak ul li {margin-bottom: 0px;}
+
+ol.decimal {list-style: decimal;}
+ol.decimal li {margin-bottom: 0px;}
+ol.decimal-linebreak {list-style: decimal;}
+ol.decimal-linebreak li {margin-bottom: 15px;}
+ol.decimal-linebreak ul li {margin-bottom: 0px;}
+
+ol.lroman {list-style: lower-roman;}
+ol.lroman li {margin-bottom: 0px;}
+ol.lroman-linebreak {list-style: lower-roman;}
+ol.lroman-linebreak li {margin-bottom: 15px;}
+ol.lroman-linebreak ul li {margin-bottom: 0px;}
+
+ol.uroman {list-style: upper-roman;}
+ol.uroman li {margin-bottom: 0px;}
+ol.uroman-linebreak {list-style: upper-roman;}
+ol.uroman-linebreak li {margin-bottom: 15px;}
+ol.uroman-linebreak ul li {margin-bottom: 0px;}
+
+ol.lalpha {list-style: lower-alpha;}
+ol.lalpha li {margin-bottom: 0px;}
+ol.lalpha-linebreak {list-style: lower-alpha;}
+ol.lalpha-linebreak li {margin-bottom: 15px;}
+ol.lalpha-linebreak ul li {margin-bottom: 0px;}
+
+ol.ualpha {list-style: upper-alpha;}
+ol.ualpha li {margin-bottom: 0px;}
+ol.ualpha-linebreak {list-style: upper-alpha;}
+ol.ualpha-linebreak li {margin-bottom: 15px;}
+ol.ualpha-linebreak ul li {margin-bottom: 0px;}
+
+/* Definition Lists --------------------------------- */
+dl dd {margin-top: 0px;}
+dl.linebreak dd {margin-top: 0px; margin-bottom: 15px;}
+dl.nobreak dd {margin-top: 0px; margin-bottom: 0px;}
+
+dl.glossarywithlinks dt {  
+	color: #666;   
+	font-weight: bold;  
+	margin-top: 2px;  
+	margin-bottom: 2px;  
+	}
+
+dl.glossarywithlinks dd {  
+	color: #333;  
+	margin-left: 20px;
+	margin-top: 0px;  
+	margin-bottom: 20px;  
+	}
+	
+/* Table --------------------------------- */
+table td {vertical-align: top;}
+
+table.sitemap {background: transparent; width: 100%; border: none; padding: 3px; line-height: 1.5em; margin-top: 0px;}
+table.sitemap th {text-align: left; padding-bottom: 0.3em; padding-top: 1em; color: #900;}
+table.sitemap td {padding-left: 1em; vertical-align: top;}
+
+table.noborder {background: transparent; margin: 0px 0px 15px 0px;}
+table.noborder th {text-align: center; background: transparent; color: #333; padding: 0px 10px 0px 0px;}
+table.noborder td {background: transparent; color: #333; padding: 0px 10px 0px 0px; vertical-align: top;}
+table.noborder td ul {padding: 0px 0px 0px 0.8em; margin: 0px 0px 0px 0.8em;}
+table.noborder td ol {padding: 0px 0px 0px 1em; margin: 0px 0px 0px 1em;}
+
+table.red-header {width: 100%; background: #bbb; margin: 0px 0px 15px 0px;}
+table.red-header th {text-align: center; background: #900; color: #fff; padding: 2px;}
+table.red-header th a {color: #fff; text-decoration:underline;}
+table.red-header th a:link {color: #fff;}
+table.red-header th a:visited {color: #fff;}
+table.red-header th a:hover {color: #fff;}
+table.red-header th a:active {color: #fff;}
+table.red-header td {background: #fff; color: #333; padding: 2px; vertical-align: top;}
+table.red-header td ul {padding: 0px 0px 0px 0.8em; margin: 0px 0px 0px 0.8em;}
+table.red-header td ol {padding: 0px 0px 0px 1em; margin: 0px 0px 0px 1em;}
+
+table.gray-header {width: 100%; background: #bbb; margin: 0px 0px 15px 0px;}
+table.gray-header th {text-align: center; background: #ccc; color: #666; padding: 2px;}
+table.gray-header th a {color: #666; text-decoration:underline;}
+table.gray-header th a:link {color: #666;}
+table.gray-header th a:visited {color: #666;}
+table.gray-header th a:hover {color: #666;}
+table.gray-header th a:active {color: #666;}
+table.gray-header td {background: #fff; color: #333; padding: 2px; vertical-align: top;}
+table.gray-header td ul {padding: 0px 0px 0px 0.8em; margin: 0px 0px 0px 0.8em;}
+table.gray-header td ol {padding: 0px 0px 0px 1em; margin: 0px 0px 0px 1em;}
+
+table.gold-header {width: 100%; background: #bbb; margin: 0px 0px 15px 0px;}
+table.gold-header th {text-align: center; background: #E7D19A; color: #666; padding: 2px;}
+table.gold-header th a {color: #666; text-decoration:underline;}
+table.gold-header th a:link {color: #666;}
+table.gold-header th a:visited {color: #666;}
+table.gold-header th a:hover {color: #666;}
+table.gold-header th a:active {color: #666;}
+table.gold-header td {background: #fff; color: #333; padding: 2px; vertical-align: top;}
+table.gold-header td ul {padding: 0px 0px 0px 0.8em; margin: 0px 0px 0px 0.8em;}
+table.gold-header td ol {padding: 0px 0px 0px 1em; margin: 0px 0px 0px 1em;}
+
+table th.side-header, table th.side-header-vertical {background: #F7F6EC; color: #5a5a5a;}
+/* table th.side-header-vertical {writing-mode: tb-rl; filter: flipv() fliph(); background: #F7F6EC; color: #5a5a5a;} */
+table th.alternate {background: #eee;}
+table tr.alternate td {background: #eee;}
+table td.alternate {background: #eee;}
+
+/* Images--------------------------------- */
+.right-noborder {float: right; margin: 0px 0px 5px 10px;}
+.right-border {float: right; margin: 0px 0px 5px 10px; border: 1px solid #bbb;}
+.left-noborder {float: left; margin: 0px 10px 5px 0px;}
+.left-border {float: left; margin: 0px 10px 5px 0px; border: 1px solid #bbb;}
+
+/* Text--------------------------------- */
+
+p {margin: 0px 0px 0.8em 0px;}
+.last {margin: 0px; padding: 0px;}
+h1 {font-family: Georgia, Times, serif; font-size: 2.1em; font-weight: normal; color: #900; margin: 0px 0px 8px 0px; line-height: 1.2em;}
+h2 {font-family: Georgia, Times, serif; font-size: 1.3em; color: #900; margin: 20px 0px 5px 0px; letter-spacing: 1px; line-height: 1.2em;}
+h3 {font-family: Georgia, Times, serif; font-size: 1.2em; color: #5a5a5a; margin: 20px 0px 5px 0px; line-height: 1.2em;}
+h4 {font-family: Georgia, Times, serif; font-size: 1.1em; color: #900; margin: 20px 0px 5px 0px; line-height: 1.2em;}
+h5 {font-family: Georgia, Times, serif; font-size: 1em; color: #5a5a5a; margin: 20px 0px 5px 0px; line-height: 1.2em;}
+
+h1.inline {margin: 0px 2px 0px 0px; display: inline;}
+h2.inline {margin: 0px 2px 0px 0px; display: inline;}
+h3.inline {margin: 0px 2px 0px 0px; display: inline;}
+h4.inline {margin: 0px 2px 0px 0px; display: inline;}
+h5.inline {margin: 0px 2px 0px 0px; display: inline;}
+
+.h1 {font-family: Georgia, Times, serif; font-size: 2.1em; font-weight: normal; color: #900; margin: 0px 2px 0px 0px; line-height: 1.1em; display: inline;}
+.h2 {font-family: Georgia, Times, serif; font-size: 1.3em; color: #900; margin: 0px 2px 0px 0px; line-height: 1.1em; display: inline;}
+.h3 {font-family: Georgia, Times, serif; font-size: 1.2em; color: #5a5a5a; margin: 0px 2px 0px 0px; line-height: 1.1em; display: inline;}
+.h4 {font-family: Georgia, Times, serif; font-size: 1.1em; color: #900; margin: 0px 2px 0px 0px; line-height: 1.1em; display: inline;}
+.h5 {font-family: Georgia, Times, serif; font-size: 1em; color: #5a5a5a; margin: 0px 2px 0px 0px; line-height: 1.1em; display: inline;}
+
+.box h1, .box h2, .box h3, .box h4, .box h5 {margin-top: 0px;}
+.color-box h1, .color-box h2, .color-box h3, .color-box h4, .color-box h5 {margin-top: 0px;}
+.center-box h1, .center-box h2, .center-box h3, .center-box h4, .center-box h5 {margin-top: 0px;}
+.left-box h1, .left-box h2, .left-box h3, .left-box h4, .left-box h5 {margin-top: 0px;}
+.right-box h1, .right-box h2, .right-box h3, .right-box h4, .right-box h5 {margin-top: 0px;}
+#onthispage h1, #onthispage h2, #onthispage h3, #onthispage h4, #onthispage h5 {margin-top: 0px;}
+
+/* Font Settings--------------------------------- */
+
+.largest {font-size: 1.3em;}
+.larger {font-size: 1.2em;}
+.large {font-size: 1.1em;}
+.medium {font-size: 1em;}
+.small {font-size: 0.9em;}
+.smaller {font-size: 0.8em;}
+.smallest {font-size: 0.7em;}
+
+.important {color: #900; font-weight: bold;}
+.highlight {background: #ffc; padding: 0px 2px 0px 2px;}
+.select {color: #900;}
+.downloadable {font-size: 0.85em; font-weight: bold; text-transform: capitalize;}
+
+/* Box--------------------------------- */
+
+.box {border:1px solid #E7D19A; padding: 5px; width: auto; margin: 0px 0px 15px 0px; background: #fff;}
+.color-box {border:1px solid #E7D19A; padding: 5px; width: auto; margin: 0px 0px 15px 0px; background: #F7F6EC;}
+.center-box {border:1px solid #E7D19A; padding: 5px; width: 80%; margin: 0px auto 15px auto; background: #fff;}
+.left-box {border:1px solid #E7D19A; padding: 5px; width: 200px; float: left; margin: 0px 10px 15px 0px; background: #fff;}
+.right-box {border:1px solid #E7D19A; padding: 5px; width: 200px; float: right; margin: 0px 0px 15px 10px; background: #fff;}
+
+/* On this Page--------------------------------- */
+#onthispage {width: auto; margin: 15px 0px 20px 0px; font-weight: bold;}
+#onthispage h1, #onthispage h2, #onthispage h3, #onthispage h4, #onthispage h5 {padding: 0px; margin: 0px; font-size: 1.1em; font-weight: bold;}
+#onthispage ul {display: inline; list-style: none; padding: 0px; margin: 0px;}
+#onthispage li {display: inline; padding: 0px; margin: 0px; white-space: nowrap;}
+#onthispage li:before {font-weight: normal; content: " | "; }
+#onthispage li:first-child:before {font-weight: normal; content: ""; }
+#onthispage a {font-weight: normal;}
+
+/*IE workaround*/
+/*All IE browsers*/
+* html #onthispage li {background-image: url("../images/pipe.gif"); background-repeat: no-repeat; background-position: 0px 50%; padding: 0px 0px 0px 0.6em; margin: 0px 0.5em 0px -0.5em;}
+*:first-child+html #onthispage li {background-image: url("../images/pipe.gif"); background-repeat: no-repeat; background-position: 0px 50%; padding: 0px 0px 0px 0.6em; margin: 0px 0.5em 0px -0.5em;}
+
+/*Win IE browsers - hide from Mac IE\*/
+* html #onthispage {height: 1%;}
+*:first-child+html #onthispage {height: 1%;}
+* html #onthispage li {display: block; float: left;}
+*:first-child+html #onthispage li {display: block; float: left;}
+/*End hide*/
+
+/*Mac IE 5*/
+* html #onthispage li:first-child {background-image: none;}
+*:first-child+html #onthispage li:first-child {background-image: none;}
+
+/* Navigation--------------------------------- */
+
+#skipnav {position: absolute; left: -1000em; width: 20em; text-align: left;}
+
+/* Sitemap and links --------------------------------- */
+
+#sitemap {background-color: transparent;}
+#sitemap a {font-size: 0.9em; font-weight: bold; text-decoration: none;	color: #5a5a5a;}
+#sitemap a:link {text-decoration: none;}
+#sitemap a:visited {text-decoration: none;}
+#sitemap a:hover {text-decoration: underline; color: #900;}
+#sitemap a:active {text-decoration: underline; color: #900;}
+
+/* Alphabetical anchor navigation for long index or glossary pages --------------------------------- */
+
+#alphanav {line-height: 15px; text-align: center; margin-top: -10px; font-size: 1em; color: #666;}
+#alphanav a {text-decoration: none; color: #039;}
+#alphanav a:visited {text-decoration: none; color: #039;}
+
 </body>
 </html>
